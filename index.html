@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.lampu{
+			width: 100px;
+			height: 100px;
+			
+			background-size: cover;
+			background-position: center;
+		}
+		 .animate{
+			animation: animasi 3s
+			steps(3) forwards;
+		}
+
+		@keyframes animasi{
+			0%{background-image: url('1.png');
+			}
+	33%{background-image: url('2.png');
+			}
+
+				67%{background-image: url('3.png');
+			}
+		} 
+		.link{
+			display:block;
+			width: auto;
+			justify-content: center;
+			align-items: center;
+
+			/*height: 100vh ;*/
+		}
+		a{
+			font-size:20px;
+			display: block;
+			text-align: center;
+		}
+		p{
+			font-size: 20px;
+			display: block;
+			text-align: center;
+
+		}
+		.deskripsi{
+			display: block;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.link p{
+			font-size: 50px;
+		}
+		.link a:link{
+			font-size:50px;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+
+
+		}
+		.videoBG{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			min-height: 100%;
+			min-width: 100%;
+			z-index: -1;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<video id="videoBG" src="background.mp4" autoplay muted loop></video>
+
+	<div class="lampu"></div>
+<p id="nama">Toha mahfudz</p>
+<div class="deskripsi">
+<p>
+	Otodidak belajar pemrograman mulai dari 2019.dimulai dengan memakai unity untuk membuat game sejenis flappy bird.
+</p>
+<p>Mengalami banyak kesulitan ,mulai dari keterbatasan sumber daya internet, kesulitan memahami materi dari YouTube hingga pernah mengalami kesulitan dalam build game.</p>
+<p>Tertarik belajar dengan membuat  projeck game developer dan web developer , walau belum pernah upload game karena belum sempurna dalam build dan kesulitan mencari tempat upload yang gratis dan murah.</p>
+</div>
+<div class="link">
+	<p>link projek</p>
+	<a href="https://tohamahfudzz.github.io/Calculator/">kalkulator</a>
+<a href="https://tohamahfudzz.github.io/polusi/">cek polusi udara menggunakan API</a>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
