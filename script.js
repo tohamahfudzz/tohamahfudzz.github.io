@@ -4,6 +4,7 @@ const body=document.body;
 const deskrip=document.getElementsByClassName('deskripsi');
 const link=document.getElementsByClassName('link');
 const judulLink=link[0].querySelector(':nth-child(1)');
+const videoBG= document.getElementById('videoBG');
 
 lampu[0].style.backgroundImage="url('1.png')";
 body.style.backgroundColor="white";
@@ -33,16 +34,16 @@ function aktif()
 	{
 		nama.style.color="#87CEEB";
 		deskrip[0].style.color='white';
-		judulLink.style.color='blue';
+		judulLink.style.color='white';
 	body.style.backgroundColor='black';
 
 	lampu[0].style.backgroundImage="url('last.png')"
 }
 else if(body.style.backgroundColor==="black")
 {
-	nama.style.color="black";
-	deskrip[0].style.color='black';
-		judulLink.style.color='black';
+	nama.style.color="white";
+	deskrip[0].style.color='white';
+		judulLink.style.color='white';
 	body.style.backgroundColor='white';
 	lampu[0].style.backgroundImage="url('1.png')"
 }
